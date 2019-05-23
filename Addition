@@ -1,0 +1,49 @@
+# Nunit-test
+     public void Add_Input10point9and888point9_Returns899point8()
+        {
+            //Arrange
+            double n1 = 10.9;
+            double n2=888.9;
+            double expectedresult = n1 + n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+     
+        }
+
+
+        [Test]
+        public void GetAddition_Inputnegative124point9andnegative3321point9_Returnsnegative3446point7()
+        {
+            //Arrange
+            double n1 = -124.9;
+            double n2 = -3321.9;
+            double expectedresult = n1 + n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+        [Test]
+        public void GetAddition_Input245andnegative54point2_Returns190point8()
+        {
+            //Arrange
+            double n1 = 245;
+            double n2 = -54.2;
+            double expectedresult = n1 + n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
