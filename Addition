@@ -46,4 +46,54 @@
             Assert.AreEqual(expectedresult, actualresult);
 
         }
+        
+        [Test]
+        public void GetSubstraction_Input878andnegative542point2_Returns1420point2()
+        {
+            //Arrange
+            double n1 = 878;
+            double n2 = -542.2;
+            double expectedresult = n1 - n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetSubtraction();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+
+        [Test]
+        public void GetSubstraction_Input80and50point5_Returns29point5()
+        {
+            //Arrange
+            double n1 = 80;
+            double n2 = 50.2;
+            double expectedresult = n1 - n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetSubtraction();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+        [Test]
+        public void GetSubstraction_Inputnegative800point8andnegative555point2_Returnsnegative245point6()
+        {
+            //Arrange
+            double n1 = -888.8;
+            double n2 = -555.2;
+            double expectedresult = n1 - n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetSubtraction();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
 
