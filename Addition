@@ -145,4 +145,57 @@
             Assert.AreEqual(expectedresult, actualresult);
 
         }
+        
+        [Test]
+        public void GetDivision_Input10and2_Returns5()
+        {
+            //Arrange
+            double n1 = 10;
+            double n2 = 2;
+            double expectedresult = n1 / n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetDivision();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+        [Test]
+        public void GetDivision_Inputnegative10point5and2point5_Returnsnegative4point2()
+        {
+            //Arrange
+            double n1 = -10.5;
+            double n2 = 2.5;
+            double expectedresult = n1 / n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetDivision();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+        [Test]
+        public void GetDivision_Inputnegative110point8andnegative50point3_Returns2point202()
+        {
+            //Arrange
+            double n1 = -110.8;
+            double n2 = -50.3;
+            double expectedresult = n1 / n2;
+            Calc testcalc = new Calc(n1, n2);
+
+            //Act
+            double actualresult = testcalc.GetDivision();
+            //Assert
+            Assert.AreEqual(expectedresult, actualresult);
+
+        }
+
+
+    }
+}
+
 
